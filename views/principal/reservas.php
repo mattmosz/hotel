@@ -9,6 +9,20 @@ include_once 'views/template/portada.php'; ?>
         </div>
         <div class="row">
             <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="alert alert-<?php echo $data['tipo']; ?> alert-dismissible fade show" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                            <strong>Resultado</strong> <?php echo $data['mensaje']; ?>
+                        </div>
+
+                        <input type="hidden" id="fecha_llegada" value="<?php echo $data['disponible']['fecha_llegada']; ?>">
+                        <input type="hidden" id="fecha_salida" value="<?php echo $data['disponible']['fecha_salida']; ?>">
+                        <input type="hidden" id="habitacion" value="<?php echo $data['disponible']['habitacion']; ?>">
+                        <div id='calendar'></div>
+                    </div>
+                </div>
                 <div class="alert alert-<?php echo $data['tipo']; ?> alert-dismissible fade show" role="alert">
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
