@@ -35,7 +35,9 @@ include_once 'views/template/portada.php'; ?>
                 <div id='calendar'></div>
             </div>
             <div class="col-md-3">
-                <div class="check-content">
+            <div class="card">
+            <div class="card-body">
+            <div class="check-content">
                     <p>Fecha de Llegada</p>
                     <div class="form-group">
                         <div class="input-group date" id="datetimepicker-1">
@@ -75,6 +77,8 @@ include_once 'views/template/portada.php'; ?>
                         Verificar Disponibilidad
                         <i class="flaticon-right"></i>
                     </button>
+                </div>
+                  </div>
                 </div>
             </div>
         </div>
