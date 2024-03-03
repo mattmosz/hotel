@@ -21,7 +21,7 @@ class ReservaModel extends Query{
     }
      //OBTENER HABITACION
      public function getHabitacion($id_habitacion){
-        return $this->todos("SELECT * FROM habitaciones WHERE id_habitacion = $id_habitacion");
+        return $this->uno("SELECT * FROM habitaciones WHERE id_habitacion = $id_habitacion");
     }
 }
 
