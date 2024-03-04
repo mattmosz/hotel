@@ -65,8 +65,8 @@ include_once 'views/template/portada.php'; ?>
                                     <select name="habitacion" class="select-auto" id="habitacion" style="width:100%">
                                         <option value="">Seleccionar</option>
                                         <?php foreach ($data['habitaciones'] as $habitacion) { ?>
-                                            <option value="<?php echo $habitacion['id_habitacion']; ?>" <?php echo ($habitacion['id_habitacion'] == $data['disponible']['habitacion']) ? 'selected' : '' ; ?>>
-                                            <?php echo $habitacion['estilo_habitacion']; ?></option>
+                                            <option value="<?php echo $habitacion['id_habitacion']; ?>" <?php echo ($habitacion['id_habitacion'] == $data['disponible']['habitacion']) ? 'selected' : ''; ?>>
+                                                <?php echo $habitacion['estilo_habitacion']; ?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
@@ -84,10 +84,17 @@ include_once 'views/template/portada.php'; ?>
                                 <div class="single-rooms-three-content">
                                     <h3><?php echo $data['habitacion']['estilo_habitacion']; ?></h3>
                                     <span class="price"><?php echo $data['habitacion']['precio_noche']; ?>/noche</span>
-                                    <a href="book-table.html" class="default-btn">
-                                        Reservar
-                                        <i class="flaticon-right"></i>
-                                    </a>
+                                    <?php if (!empty($_SESSION['id_usuario'])) { ?>
+                                        <a href="<?php echo RUTA_PRINCIPAL . 'perfil'; ?>" class="default-btn">
+                                            Reservar
+                                            <i class="flaticon-right"></i>
+                                        </a>
+                                    <?php } else { ?>
+                                        <a href="<?php echo RUTA_PRINCIPAL . 'login'; ?>" class="default-btn">
+                                            Iniciar Sesión
+                                            <i class="flaticon-right"></i>
+                                        </a>
+                                    <?php }  ?>
                                 </div>
                             </div>
                         </div>

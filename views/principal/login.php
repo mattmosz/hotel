@@ -34,7 +34,7 @@ include_once 'views/template/portada.php'; ?>
 									<div class="col-12">
 										<p class="account-desc">
 											¿No tienes una cuenta?
-											<a href="sign-up.html">Regístrate ahora</a>
+											<a href="<?php echo RUTA_PRINCIPAL . 'registro';  ?>">Regístrate ahora</a>
 										</p>
 									</div>
 								</div>
