@@ -10,6 +10,7 @@ class Login extends Controller
     public function index()
     {
         $data['title'] = 'Login';
+        $data['subtitle'] = 'Inicio de Sesión';
         $this->views->getView('principal/login', $data);
     }
 
