@@ -14,17 +14,17 @@ include_once 'views/template/portada.php'; ?>
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="name" placeholder="Nombre">
+                                    <input class="form-control" type="text" name="nombre" placeholder="Nombre">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 ">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="name" placeholder="Apellidos">
+                                    <input class="form-control" type="text" name="apellido" placeholder="Apellidos">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="name" placeholder="Enter your username">
+                                    <input class="form-control" type="text" name="usuario" placeholder="usuario">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
