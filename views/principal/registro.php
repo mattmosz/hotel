@@ -34,7 +34,7 @@ include_once 'views/template/portada.php'; ?>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="password" placeholder="Password">
+                                    <input class="form-control" type="text" name="clave" placeholder="Contraseña">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 ">
