@@ -29,7 +29,7 @@ include_once 'views/template/portada.php'; ?>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <input class="form-control" type="email" name="email" placeholder="Email Address">
+                                    <input class="form-control" type="email" name="correo" placeholder="Correo Electronico">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
