@@ -14,8 +14,16 @@ class Registro extends Controller
         $this->views->getView('principal/registro', $data);
     }
 
-    public function registrar(){
-        print_r($_POST);
+    public function crear(){
+        $nombre = strclean($_POST['nombre']);
+        $apellido = strclean($_POST['apellido']);
+        $usuario = strclean($_POST['usuario']);
+        $correo = strclean($_POST['correo']);
+        $clave = strclean($_POST['clave']);
+        $confirmar = strclean($_POST['confirmar']);
+        $hash = password_hash($clave, PASSWORD_DEFAULT);
+        $this->model->crear($nombre, $apellido, $usuario, $correo, $hash);
+
     }
 
 }
