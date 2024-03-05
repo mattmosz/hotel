@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
        if(frm.nombre.value == '' || frm.apellido.value == ''
        || frm.usuario.value == '' || frm.correo.value == ''
        || frm.clave.value == '' || frm.confirmar.value == ''){
+        sweetalert('TODOS LOS CAMPOS SON OBLIGATORIOS', 'warning');
 
        }else{
 
