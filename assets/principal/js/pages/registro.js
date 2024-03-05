@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const url = base_url + 'resgistro/crear';
 
          http.open("POST", url, true);
-         http.send();
+         http.send(new FormData(frm));
           http.onreadystatechange=function(){
             if (this.readyState==4 && this.status==200) {
                 console.log(this.responseText);
