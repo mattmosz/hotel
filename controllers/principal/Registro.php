@@ -22,7 +22,8 @@ class Registro extends Controller
         $clave = strclean($_POST['clave']);
         $confirmar = strclean($_POST['confirmar']);
         $hash = password_hash($clave, PASSWORD_DEFAULT);
-        $this->model->crear($nombre, $apellido, $usuario, $correo, $hash);
+        $rol = 2;
+        $this->model->crear($nombre, $apellido, $usuario, $correo, $hash, $rol);
 
     }
 
