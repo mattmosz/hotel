@@ -10,7 +10,7 @@ include_once 'views/template/portada.php'; ?>
                     <div class="form-heading text-center">
                         <h3 class="form-title">Crear nueva cuenta</h3>
                     </div>
-                    <form method="post">
+                    <form id="formulario" autocomplete="off">
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
