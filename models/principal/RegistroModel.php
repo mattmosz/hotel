@@ -6,8 +6,9 @@ class RegistroModel extends Query{
        parent::__construct();
     }
     
-    public function getDisponibilidad($f_llegada, $f_salida, $habitacion){
-        return $this->todos("SELECT * FROM reservas 
+    public function registrarse($nombre, $apellido, $usuario, $correo, $hash){
+       $sql = "INSERT INTO usuarios (nombre, apellido, usuario, correo, clave) VALUES (?,?,?,?,?)";
+       return $this->todos("SELECT * FROM reservas 
         WHERE fecha_inicio <= '$f_salida' 
         AND fecha_salida >= '$f_llegada' AND id_habitacion = $habitacion");
     }
