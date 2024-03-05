@@ -8,9 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
         sweetalert('TODOS LOS CAMPOS SON OBLIGATORIOS', 'warning');
 
        }else{
+        const http = new XMLHttpRequest();
+        const url = base_url + 'resgistro/crear';
 
-       }
+         http.open("POST", url, true);
+         http.send();
+          http.onreadystatechange=function(){
+            if (this.readyState==4 && this.status==200) {
+                console.log(this.responseText);
+            }
+          };
+        }
 
-    }) 
+    });
 });
     
