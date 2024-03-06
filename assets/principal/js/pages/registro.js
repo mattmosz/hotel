@@ -2,11 +2,17 @@ const frm = document.querySelector('#formulario');
 document.addEventListener('DOMContentLoaded', function() {
      frm.addEventListener('submit', function(e) {
        e.preventDefault(); 
-       if(frm.nombre.value == '' || frm.apellido.value == ''
-       || frm.usuario.value == '' || frm.correo.value == ''
-       || frm.clave.value == '' || frm.confirmar.value == ''){
-        sweetalert('TODOS LOS CAMPOS SON OBLIGATORIOS', 'warning');
-
+       if(
+        frm.nombre.value == ''  || 
+        frm.apellido.value == ''||
+        frm.usuario.value == '' || 
+        frm.correo.value == ''  ||
+        frm.clave.value == ''   || 
+        frm.confirmar.value == ''
+        ) {
+        aleraSW('TODOS LOS CAMPOS SON OBLIGATORIOS', 'warning');
+      }else if (!terminos.ariaChecked){
+        aleraSW('ACEPTAR LOS TERMINOS Y CONDICIONES', 'warning');
        }else{
         const http = new XMLHttpRequest();
         const url = base_url + 'resgistro/crear';
