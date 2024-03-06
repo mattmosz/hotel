@@ -1,4 +1,5 @@
 const frm = document.querySelector('#formulario');
+const terminos = document.querySelector('#chb2');
 document.addEventListener('DOMContentLoaded', function() {
      frm.addEventListener('submit', function(e) {
        e.preventDefault(); 

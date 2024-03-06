@@ -46,7 +46,7 @@ include_once 'views/template/portada.php'; ?>
                                 <div class="agree-label">
                                     <input type="checkbox" id="chb2">
                                     <label for="chb2">
-                                        I agree with Haipe's
+                                        Estoy de acuerdo
                                         <a href="#">Términos y condiciones</a>
                                     </label>
                                 </div>
