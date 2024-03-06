@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost:3306
--- Tiempo de generación: 27-02-2024 a las 04:28:45
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.2.0
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 06-03-2024 a las 03:02:35
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `reservas_hotel`
 --
-CREATE DATABASE IF NOT EXISTS `reservas_hotel` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `reservas_hotel`;
 
 -- --------------------------------------------------------
 
@@ -97,7 +95,7 @@ CREATE TABLE `habitaciones` (
 --
 
 INSERT INTO `habitaciones` (`id_habitacion`, `estilo_habitacion`, `numero_habitacion`, `capacidad_habitacion`, `slug_habitacion`, `foto_habitacion`, `video_habitacion`, `descripcion_habitacion`, `precio_noche`, `estado_habitacion`, `fecha_habitacion`) VALUES
-(1, 'Doble', 10, 2, 'doble', '1.jpg', NULL, 'Ubicada en la Torre I', '44.00', 1, '2024-02-23 17:45:19');
+(1, 'Doble', 10, 2, 'doble', '1.jpg', NULL, 'Ubicada en la Torre I', 44.00, 1, '2024-02-23 17:45:19');
 
 -- --------------------------------------------------------
 
@@ -126,7 +124,7 @@ CREATE TABLE `reservas` (
 --
 
 INSERT INTO `reservas` (`id_reserva`, `total_reserva`, `numero_reserva`, `cod_reserva`, `fecha_inicio`, `fecha_salida`, `fecha_reserva`, `descripcion_reserva`, `estado_reserva`, `metodo_pago`, `facturacion_reserva`, `id_habitacion`, `id_usuario`) VALUES
-(1, '300.00', '234234', '234234234', '2024-02-24', '2024-02-26', '2024-02-23 22:13:28', 'prueba', 1, 1, 'prueba', 1, 1);
+(1, 300.00, '234234', '234234234', '2024-02-24', '2024-02-26', '2024-02-23 22:13:28', 'prueba', 1, 1, 'prueba', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -161,6 +159,8 @@ INSERT INTO `sliders` (`id_slider`, `titulo_slider`, `subtitulo_slider`, `url_sl
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nombre_usuario` varchar(150) NOT NULL,
+  `apellido_usuario` varchar(150) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
   `correo_usuario` varchar(150) NOT NULL,
   `clave_usuario` varchar(150) NOT NULL,
   `token_usuario` varchar(100) DEFAULT NULL,
@@ -175,8 +175,9 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `correo_usuario`, `clave_usuario`, `token_usuario`, `verify_usuario`, `rol_usuario`, `foto_usuario`, `estado_usuario`, `fecha_usuario`) VALUES
-(1, 'Matías Mosquera', 'matias.mosquera619@gmail.com', '123', NULL, 0, 1, NULL, 1, '2024-02-23 22:13:23');
+INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `usuario`, `correo_usuario`, `clave_usuario`, `token_usuario`, `verify_usuario`, `rol_usuario`, `foto_usuario`, `estado_usuario`, `fecha_usuario`) VALUES
+(1, 'Matías Mosquera', '', '', 'matias.mosquera619@gmail.com', '123', NULL, 0, 1, NULL, 1, '2024-02-23 22:13:23'),
+(2, 'Xavier Torres', '', '', 'xavier-torres99@hotmail.com', '1234', NULL, 0, 0, NULL, 1, '2024-03-05 22:57:06');
 
 --
 -- Índices para tablas volcadas
@@ -271,7 +272,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
