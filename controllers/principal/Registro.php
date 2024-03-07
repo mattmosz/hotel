@@ -26,14 +26,25 @@ class Registro extends Controller
                 $confirmar = strclean($_POST['confirmar']);
                 $hash = password_hash($clave, PASSWORD_DEFAULT);
                 $rol = 2;
-                
-                if ($clave == $confirmar) { 
-                    $data = $this->model->registrarse($nombre, $apellido, $usuario, $correo, $hash, $rol);
-                    
-                    if ($data > 0) {
-                        $res = ['tipo' => 'success', 'msg' => 'USUARIO REGISTRADO'];
+
+                if ($clave == $confirmar) {
+                    //Verificar campos únicos
+                    $verificarUser = $this->model->validarUnique('usuario', $usuario, 0);
+                    if (empty($verificarUser)) {
+                        $verificarCorreo = $this->model->validarUnique('correo_usuario', $correo, 0);
+                        if (empty($verificarCorreo)) {
+                            $data = $this->model->registrarse($nombre, $apellido, $usuario, $correo, $hash, $rol);
+
+                            if ($data > 0) {
+                                $res = ['tipo' => 'success', 'msg' => 'USUARIO REGISTRADO'];
+                            } else {
+                                $res = ['tipo' => 'warning', 'msg' => 'ERROR AL REGISTRARSE'];
+                            }
+                        } else {
+                            $res = ['tipo' => 'warning', 'msg' => 'EL CORREO YA EXISTE'];
+                        }
                     } else {
-                        $res = ['tipo' => 'warning', 'msg' => 'ERROR AL REGISTRARSE'];
+                        $res = ['tipo' => 'warning', 'msg' => 'EL USUARIO YA EXISTE'];
                     }
                 } else {
                     $res = ['tipo' => 'warning', 'msg' => 'LAS CONTRASEÑAS NO COINCIDEN'];
@@ -44,7 +55,7 @@ class Registro extends Controller
         } else {
             $res = ['tipo' => 'warning', 'msg' => 'TODOS LOS CAMPOS CON * SON REQUERIDOS ****'];
         }
-        
+
         echo json_encode($res, JSON_UNESCAPED_UNICODE);
         die();
     }
