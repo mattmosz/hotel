@@ -17,7 +17,7 @@ class Registro extends Controller
     public function crear()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            if (validarCampos(['nombre', 'apellido', 'usuario', 'correo', 'clave', 'confirmar'])) {
+            if (validarCampos(['nombre', 'apellido', 'usuario', 'correo', 'clave', 'confirmar', 'chb2'])) {
                 $nombre = strclean($_POST['nombre']);
                 $apellido = strclean($_POST['apellido']);
                 $usuario = strclean($_POST['usuario']);
