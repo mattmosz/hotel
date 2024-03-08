@@ -50,7 +50,7 @@ class Registro extends Controller
                     $res = ['tipo' => 'warning', 'msg' => 'LAS CONTRASEÑAS NO COINCIDEN'];
                 }
             } else {
-                $res = ['tipo' => 'warning', 'msg' => 'ALGUNOS CAMPOS REQUERIDOS NO SE HAN COMPLETADO CORRECTAMENTE'];
+                $res = ['tipo' => 'warning', 'msg' => 'TODOS LOS CAMPOS SON OBLIGATORIOS'];
             }
 
             echo json_encode($res, JSON_UNESCAPED_UNICODE);

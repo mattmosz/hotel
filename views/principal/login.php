@@ -14,7 +14,7 @@ include_once 'views/template/portada.php'; ?>
 								<div class="row">
 									<div class="col-12">
 										<div class="form-group">
-											<input class="form-control" type="text" name="nombre" placeholder="Usuario o Correo">
+											<input class="form-control" type="text" name="usuario" placeholder="Usuario o Correo">
 										</div>
 									</div>
 									<div class="col-12">
