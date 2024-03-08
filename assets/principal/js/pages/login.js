@@ -2,9 +2,9 @@ const frm = document.querySelector("#formulario");
 document.addEventListener("DOMContentLoaded", function () {
   frm.addEventListener("submit", function (e) {
     e.preventDefault();
-    //if (frm.usuario.value == "" || frm.clave.value == "") {
-    //  sweetalert("TODOS LOS CAMPOS SON OBLIGATORIOS", "warning");
-    //} else {
+    if (frm.usuario.value == "" || frm.clave.value == "") {
+      sweetalert("TODOS LOS CAMPOS SON OBLIGATORIOS", "warning");
+    } else {
       const http = new XMLHttpRequest();
       const url = base_url + "login/verify";
       http.open("POST", url, true);
@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
           if (res.tipo == "success") {
             frm.reset();
             //Redirigir
+            window.location = base_url + 'dashboard';
           }
         }
       };
-    //}
+    }
   });
 });
