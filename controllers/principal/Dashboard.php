@@ -7,7 +7,6 @@ class Dashboard extends Controller{
     }
     public function index(){
         $data['title'] = 'Perfil Cliente';
-        $data['subtitle'] = 'Bienvenido';
         $this->views->getView('principal/clientes/index', $data);
         
     }

@@ -55,7 +55,7 @@
                         <div class="menu-title">Reservas</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Email</a>
+                        <li> <a href="<?php echo RUTA_PRINCIPAL . 'reserva/pendiente' ?>"><i class="bx bx-right-arrow-alt"></i>Pendiente</a>
                         </li>
                     </ul>
                 </li>
