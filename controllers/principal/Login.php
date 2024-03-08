@@ -14,4 +14,8 @@ class Login extends Controller
         $this->views->getView('principal/login', $data);
     }
 
+    public function verify(){
+        
+    }
+
 }

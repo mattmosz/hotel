@@ -52,11 +52,9 @@ class Registro extends Controller
             } else {
                 $res = ['tipo' => 'warning', 'msg' => 'ALGUNOS CAMPOS REQUERIDOS NO SE HAN COMPLETADO CORRECTAMENTE'];
             }
-        } else {
-            $res = ['tipo' => 'warning', 'msg' => 'TODOS LOS CAMPOS CON * SON REQUERIDOS ****'];
-        }
 
-        echo json_encode($res, JSON_UNESCAPED_UNICODE);
-        die();
+            echo json_encode($res, JSON_UNESCAPED_UNICODE);
+            die();
+        }
     }
 }
