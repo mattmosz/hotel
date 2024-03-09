@@ -10,6 +10,11 @@ class Dashboard extends Controller{
         $this->views->getView('principal/clientes/index', $data);
         
     }
+
+    public function salir(){
+        session_destroy();
+        header('');
+    }
 }
 
 ?>
