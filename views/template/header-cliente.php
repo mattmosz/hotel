@@ -43,7 +43,7 @@
             <ul class="metismenu" id="menu">
                 <li>
                     <a href="javascript:;">
-                        <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                        <div class="parent-icon"><i class="fa-solid fa-gauge"></i>
                         </div>
                         <div class="menu-title">Dashboard</div>
                     </a>
