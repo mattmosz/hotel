@@ -110,6 +110,11 @@ function crearSession($datos){
   $_SESSION['rol_usuario'] = $datos['rol_usuario'];
 }
 
+//REDIRECT
+function redirect($ruta){
+  header('Location: ' . $ruta);
+}
+
 // AGREGAR ELEMENTOS A LA RESERVA
 function addToCart($carrito, $id, $nombre, $precio, $token, $cant = 1){
   if (!isset($_SESSION[$carrito])) {

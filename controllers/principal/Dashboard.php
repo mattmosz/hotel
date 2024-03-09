@@ -13,7 +13,7 @@ class Dashboard extends Controller{
 
     public function salir(){
         session_destroy();
-        header('');
+        redirect(RUTA_PRINCIPAL . 'login');
     }
 }
 
