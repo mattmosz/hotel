@@ -26,6 +26,8 @@ class Reserva extends Controller
                     'habitacion' => $habitacion
                 ];
                 if (empty($reserva)) {
+                    //Session de habitacion
+                    $_SESSION['reserva'] = $data['disponible'];
                     $data['mensaje'] = 'HABITACION DISPONIBLE';
                     $data['tipo'] = 'success';
                 } else {
@@ -70,6 +72,10 @@ class Reserva extends Controller
 
     public function pendiente(){
         $data['title'] = 'Reserva Pendiente';
+        $data['habitacion'] = [];
+        if(!empty($_SESSION['reserva'])){
+           $data['habitacion'] = $this->model->getHabitacion($_SESSION['reserva']['habitacion']);
+        }
         $this->views->getView('principal/clientes/reservas/pendiente', $data);
     }
 }
