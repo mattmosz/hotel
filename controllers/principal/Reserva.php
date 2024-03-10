@@ -36,7 +36,7 @@ class Reserva extends Controller
                 }
                 $data['habitaciones'] = $this->model->getHabitaciones();
                 $data['habitacion'] = $this->model->getHabitacion($habitacion);
-                $this->views->getView('principal/reservas', $data);
+                $this->views->getView('principal/perfil', $data);
             }
         }
     }
@@ -70,12 +70,14 @@ class Reserva extends Controller
         die();
     }
 
-    public function pendiente(){
+    public function pendiente()
+    {
         $data['title'] = 'Reserva Pendiente';
+        $data['subtitle'] = 'Reservas';
         $data['habitacion'] = [];
-        if(!empty($_SESSION['reserva'])){
-           $data['habitacion'] = $this->model->getHabitacion($_SESSION['reserva']['habitacion']);
+        if (!empty($_SESSION['reserva'])) {
+            $data['habitacion'] = $this->model->getHabitacion($_SESSION['reserva']['habitacion']);
         }
-        $this->views->getView('principal/clientes/reservas/pendiente', $data);
+        $this->views->getView('principal/perfil/pendiente', $data);
     }
 }

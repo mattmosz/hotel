@@ -85,7 +85,7 @@ include_once 'views/template/portada.php'; ?>
                                     <h3><?php echo $data['habitacion']['estilo_habitacion']; ?></h3>
                                     <span class="price"><?php echo $data['habitacion']['precio_noche']; ?>/noche</span>
                                     <?php if (!empty($_SESSION['id_usuario'])) { ?>
-                                        <a href="<?php echo RUTA_PRINCIPAL . 'perfil'; ?>" class="default-btn">
+                                        <a href="<?php echo RUTA_PRINCIPAL . 'login'; ?>" class="default-btn">
                                             Reservar
                                             <i class="flaticon-right"></i>
                                         </a>

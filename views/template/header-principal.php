@@ -98,9 +98,8 @@
                             </ul>
                             <!-- Start Other Option -->
                             <div class="others-option">
-                                <a class="call-us" href="tel:+009-8765-4332">
-                                    <i class="bx bx-phone-call bx-tada"></i>
-                                    +009 8765 4332
+                                <a class="btn btn-primary btn-orange" href="<?php echo RUTA_PRINCIPAL . 'login'; ?>">
+                                    Ir al perfil
                                 </a>
                             </div>
                             <!-- End Other Option -->

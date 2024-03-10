@@ -1,4 +1,27 @@
-<?php include_once 'views/template/header-cliente.php'; ?>
+<?php include_once 'views/template/header-principal.php';
+include_once 'views/template/portada.php'; ?>
+
+<link rel="icon" href="<?php echo RUTA_PRINCIPAL . 'assets/'; ?>img/logo.jpg" type="image/png" />
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+<!-- loader-->
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/pace.min.css" rel="stylesheet" />
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>js/pace.min.js"></script>
+<!-- Bootstrap CSS -->
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/bootstrap-extended.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/app.css" rel="stylesheet">
+<link href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/icons.css" rel="stylesheet">
+<!-- Theme Style CSS -->
+<link rel="stylesheet" href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/dark-theme.css" />
+<link rel="stylesheet" href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/semi-dark.css" />
+<link rel="stylesheet" href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/header-colors.css" />
+<nav class="nav justify-content-center">
+
+    <a class="nav-link" href="#">Perfil</a>
+    <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'reserva/pendiente' ?>">Reservas</a>
+</nav>
 
 <div class="card">
     <div class="card-body">
@@ -12,7 +35,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-6">
-                <img src="<?php echo RUTA_PRINCIPAL . 'assets/img/habitaciones/'. $data['habitacion']['foto_habitacion'] ?>" class="img-fluid rounded-top" alt="" style="width: 50%; height: auto;" />
+                    <img src="<?php echo RUTA_PRINCIPAL . 'assets/img/habitaciones/' . $data['habitacion']['foto_habitacion'] ?>" class="img-fluid rounded-top" alt="" style="width: 50%; height: auto;" />
 
                     <!-- Hover added -->
                     <div class="list-group">
@@ -60,9 +83,8 @@
     </div>
 </div>
 
+<?php include_once 'views/template/footer-principal.php';  ?>
 
-
-<?php include_once 'views/template/footer-cliente.php';  ?>
 </body>
 
 </html>
