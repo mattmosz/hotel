@@ -19,7 +19,7 @@ include_once 'views/template/portada.php'; ?>
 <link rel="stylesheet" href="<?php echo RUTA_PRINCIPAL . 'assets/admin/'; ?>css/header-colors.css" />
 <nav class="nav justify-content-center">
 
-    <a class="nav-link" href="#">Perfil</a>
+    <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'perfil' ?>">Perfil</a>
     <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'reserva/pendiente' ?>">Reservas</a>
 </nav>
 
