@@ -36,7 +36,7 @@ class Reserva extends Controller
                 }
                 $data['habitaciones'] = $this->model->getHabitaciones();
                 $data['habitacion'] = $this->model->getHabitacion($habitacion);
-                $this->views->getView('principal/perfil', $data);
+                $this->views->getView('principal/reservas', $data);
             }
         }
     }
