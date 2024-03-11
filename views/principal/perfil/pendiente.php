@@ -70,7 +70,25 @@ include_once 'views/template/portada.php'; ?>
                     </div>
 
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <strong>Total:</strong>
+                            <?php
+                            $fechaLlegada = $_SESSION['reserva']['fecha_llegada'];
+                            $fechaSalida = $_SESSION['reserva']['fecha_salida'];
+                            $precioNoche = $data['habitacion']['precio_noche'];
+
+                            $diferenciaFechas = strtotime($fechaSalida) - strtotime($fechaLlegada);
+                            $noches = floor($diferenciaFechas / (60 * 60 * 24));
+
+                            $total = $precioNoche * $noches;
+                            echo number_format($total, 2); 
+                            ?>
+                        </a>
+                    </div>
+                    <button class="btn btn-primary mt-3">Confirmar Reserva</button>
+                </div>
             </div>
 
         <?php } else { ?>
