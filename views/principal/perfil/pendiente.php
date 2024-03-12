@@ -21,6 +21,7 @@ include_once 'views/template/portada.php'; ?>
 
     <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'perfil' ?>">Perfil</a>
     <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'reserva/pendiente' ?>">Reservas</a>
+    <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'logout'?>">Cerrar Sesión</a>
 </nav>
 
 <div class="card">
