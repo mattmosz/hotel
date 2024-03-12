@@ -364,10 +364,10 @@
                     </div>
                     <div class="user-box dropdown">
                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <img src="<?php echo RUTA_PRINCIPAL . 'assets'; ?>/img/logo.jpg" class="user-img" alt="user avatar">
                             <div class="user-info ps-3">
-                                <p class="user-name mb-0">Pauline Seitz</p>
-                                <p class="designattion mb-0">Web Designer</p>
+                                <p class="user-name mb-0"><?php echo $_SESSION['nombre_usuario']; ?></p>
+                                <p class="designattion mb-0"><?php echo $_SESSION['usuario']; ?></p>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
