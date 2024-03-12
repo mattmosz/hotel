@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (res.tipo == "success") {
                         frm.reset();
                         //Redirigir
-                        window.location = base_url + 'perfil';
+                        window.location = base_url + 'dashboard/index';
                         console.log(window.location.href)
                     }
                 }
