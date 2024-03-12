@@ -46,10 +46,10 @@
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='bx bx-home-circle'></i>
                         </div>
-                        <div class="menu-title">Dashboard</div>
+                        <div class="menu-title">Panel de Control</div>
                     </a>
                     <ul>
-                        <li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Default</a>
+                        <li> <a href="<?php echo RUTA_ADMIN . 'reserva/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Reservas</a>
                         </li>
                         <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
                         </li>
@@ -80,7 +80,9 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            <li><a class="dropdown-item" href="javascript:;"><i class="bx bx-home-circle"></i><span>Panel de Control</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;" onclick="cerrarSesion()"><i class='bx bx-log-out-circle'></i><span>Cerrar Sesión</span></a>
                             </li>
                         </ul>
                     </div>

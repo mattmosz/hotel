@@ -105,11 +105,17 @@
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/jquery.min.js"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/simplebar/js/simplebar.min.js"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/metismenu/js/metisMenu.min.js"></script>
-    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/chartjs/js/Chart.min.js"></script>
+    <!-- <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/chartjs/js/Chart.min.js"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/chartjs/js/Chart.extension.js"></script>
-    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/index.js"></script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/index.js"></script> -->
+    
     <!--app JS-->
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    const base_url = '<?php echo RUTA_ADMIN; ?>';
+    </script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/custom.js" ></script>
 </body>
 
 </html>

@@ -10,6 +10,11 @@ class Dashboard extends Controller{
         $this->views->getView('/admin/dashboard/index', $data);
         
     }
+
+    public function logout(){
+        session_destroy();
+        redirect(RUTA_ADMIN);
+    }
 }
 
 ?>

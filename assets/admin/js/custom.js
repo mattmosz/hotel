@@ -1,4 +1,5 @@
 function cerrarSesion() {
+  console.log("cerrarSesion");
   Swal.fire({
     title: "¿Seguro de cerrar la sesión?",
     text: "Deberá volver a iniciar sesión para continuar",
@@ -10,7 +11,7 @@ function cerrarSesion() {
     cancelButtonText: "Cancelar",
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location = base_url + 'dashboard/salir'
+      window.location = base_url + 'dashboard/logout';
     }
   });
 }
