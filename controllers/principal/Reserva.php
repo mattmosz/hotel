@@ -77,6 +77,7 @@ class Reserva extends Controller
         $data['habitacion'] = [];
         if (!empty($_SESSION['reserva'])) {
             $data['habitacion'] = $this->model->getHabitacion($_SESSION['reserva']['habitacion']);
+            $_SESSION['reserva']['precio_noche'] = $data['habitacion']['precio_noche'];
         }
         $this->views->getView('principal/perfil/pendiente', $data);
     }

@@ -11,12 +11,6 @@
                             <div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
                                 <h1><?php echo $slider['titulo_slider']; ?></h1>
                                 <span><?php echo $slider['subtitulo_slider']; ?></span>
-                                <div class="slider-btn">
-                                    <a class="default-btn" href="<?php echo $slider['url_slider']; ?>">
-                                        Más Información
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>

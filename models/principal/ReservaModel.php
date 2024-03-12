@@ -23,6 +23,7 @@ class ReservaModel extends Query{
      public function getHabitacion($id_habitacion){
         return $this->uno("SELECT * FROM habitaciones WHERE id_habitacion = $id_habitacion");
     }
+    
 }
 
 ?>
