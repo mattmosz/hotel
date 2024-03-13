@@ -48,4 +48,20 @@ class Habitacion extends Controller{
             }
     }
 
+    public function insertarHabitacion(){
+        if(isset($_POST['numero_habitacion'])){
+            $datos = [
+                'numero_habitacion' => $_POST['numero_habitacion'],
+                'estilo_habitacion' => $_POST['estilo_habitacion'],
+                'descripcion_habitacion' => $_POST['descripcion_habitacion'],
+                'precio_noche' => $_POST['precio_noche'],
+                'estado_habitacion' => $_POST['estado_habitacion']
+            ];
+            $habitacion = $this->model->insertarHabitacion($datos);
+            if($habitacion){
+                header('location:'.RUTA_ADMIN.'habitacion/listar');
+            }
+        }
+    }
+
 }

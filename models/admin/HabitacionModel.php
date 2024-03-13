@@ -27,4 +27,9 @@ class HabitacionModel extends Query
         return $this->guardar("DELETE FROM habitaciones WHERE id_habitacion = :id_habitacion", ['id_habitacion' => $id_habitacion]);
     }
 
+    public function insertarHabitacion($datos)
+    {
+        return $this->guardar("INSERT INTO habitaciones (numero_habitacion, estilo_habitacion, descripcion_habitacion, precio_noche, estado_habitacion) VALUES (:numero_habitacion, :estilo_habitacion, :descripcion_habitacion, :precio_noche, :estado_habitacion)", $datos);
+    }
+
 }

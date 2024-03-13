@@ -3,7 +3,7 @@
 <div class="tile">
     <div class="tile-body">
         <h2>Lista de Habitaciones</h2>
-        <a href="#" class="btn btn-success">Nueva Habitación</a>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nuevaHabitacionModal">Nueva Habitación</button>
         <div class="table-responsive">
             <table class="table table-hover table-bordered" id="tablaHabitaciones">
                 <thead>
@@ -72,6 +72,46 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="nuevaHabitacionModal" tabindex="-1" role="dialog" aria-labelledby="nuevaHabitacionModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="nuevaHabitacionModalLabel">Nueva Habitación</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="numero" class="col-form-label">Numero:</label>
+                                    <input type="text" class="form-control" id="numero_habitacion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo" class="col-form-label">Tipo:</label>
+                                    <input type="text" class="form-control" id="estilo_habitacion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="descripcion" class="col-form-label">Descripcion:</label>
+                                    <input type="text" class="form-control" id="descripcion_habitacion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="precio" class="col-form-label">Precio/Noche:</label>
+                                    <input type="text" class="form-control" id="precio_noche">
+                                </div>
+                                <div class="form-group">
+                                    <label for="estado" class="col-form-label">Estado:</label>
+                                    <input type="text" class="form-control" id="estado_habitacion">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -82,6 +122,7 @@
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalHabitaciones.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarHabitacion.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarHabitacion.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/insertarHabitacion.js'; ?>"></script>
 </body>
 
 </html>
