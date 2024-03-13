@@ -3,6 +3,7 @@
 <div class="tile">
     <div class="tile-body">
         <h2>Lista de Habitaciones</h2>
+        <a href="#" class="btn btn-success">Nueva Habitación</a>
         <div class="table-responsive">
             <table class="table table-hover table-bordered" id="tablaHabitaciones">
                 <thead>
