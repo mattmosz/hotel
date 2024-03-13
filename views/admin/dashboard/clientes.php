@@ -63,7 +63,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalCliente" data-id-usuario="<?php echo $cliente['id_usuario']; ?>">Editar</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
@@ -75,6 +75,7 @@
 
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalClientes.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarCliente.js'; ?>"></script>
 </body>
 
 </html>

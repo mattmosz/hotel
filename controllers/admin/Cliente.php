@@ -25,5 +25,22 @@ class Cliente extends Controller{
             }
         }
     }
+
+    public function actualizarCliente(){
+        if(isset($_POST['id_usuario'])){
+            $datos = [
+                'id_usuario' => $_POST['id_usuario'],
+                'nombre_usuario' => $_POST['nombre_usuario'],
+                'apellido_usuario' => $_POST['apellido_usuario'],
+                'usuario' => $_POST['usuario'],
+                'correo_usuario' => $_POST['correo_usuario'],
+                'estado_usuario' => $_POST['estado_usuario']
+            ];
+            $cliente = $this->model->actualizarCliente($datos);
+            if($cliente){
+                header('location:'.RUTA_ADMIN.'cliente/listar');
+            }
+        }
+    }
     
 }
