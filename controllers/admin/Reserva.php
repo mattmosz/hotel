@@ -3,11 +3,10 @@
 class Reserva extends Controller{
     public function __construct() {
         parent::__construct();
-        session_start();
     }
     public function listar(){
         
-        $reservas = $this->model->listarReservas();
+        $reservas = $this->model->getReservas();
         $data['reservas'] = $reservas;
         $data['title'] = 'Reservas';
         $this->views->getView('/admin/dashboard/reservas', $data);
