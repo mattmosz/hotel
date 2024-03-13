@@ -14,4 +14,12 @@ class Habitacion extends Controller{
 
     }
 
+    public function obtenerHabitacion(){
+        if(isset($_POST['id_habitacion'])){
+            $id_habitacion = $_POST['id_habitacion'];
+            $habitacion = $this->model->getHabitacion($id_habitacion);
+            echo json_encode($habitacion);
+        }
+    }
+
 }

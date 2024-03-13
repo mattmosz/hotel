@@ -13,4 +13,9 @@ class HabitacionModel extends Query
         return $this->todos("SELECT * FROM habitaciones");
     }
 
+    public function getHabitacion($id_habitacion)
+    {
+        return $this->uno("SELECT numero_habitacion, estilo_habitacion, descripcion_habitacion, precio_noche, estado_habitacion FROM habitaciones WHERE id_habitacion = '$id_habitacion'");
+    }
+
 }
