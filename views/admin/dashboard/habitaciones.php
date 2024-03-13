@@ -66,7 +66,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalHabitacion" data-id-habitacion="<?php echo $habitacion['id_habitacion']; ?>">Editar</button>
                         </div>
                     </div>
                 </div>
@@ -79,6 +79,7 @@
 
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalHabitaciones.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarHabitacion.js'; ?>"></script>
 </body>
 
 </html>
