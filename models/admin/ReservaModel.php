@@ -10,7 +10,7 @@ class ReservaModel extends Query
 
     public function getReserva($numero_reserva)
     {
-        return $this->uno("SELECT * FROM reservas WHERE numero_reserva = '$numero_reserva'");
+        return $this->uno("SELECT total_reserva, fecha_inicio, fecha_salida, estado_reserva, id_habitacion, id_usuario FROM reservas WHERE numero_reserva = '$numero_reserva'");
     }
 
     public function getReservas()
@@ -19,7 +19,7 @@ class ReservaModel extends Query
     }
     public function actualizarReserva($datos)
     {
-        return $this->guardar("UPDATE reservas SET fecha_inicio = :fecha_inicio, fecha_salida = :fecha_salida, total_reserva = :total_reserva, id_habitacion = :id_habitacion, id_cliente = :id_cliente WHERE numero_reserva = :numero_reserva", $datos);
+        return $this->guardar("UPDATE reservas SET fecha_inicio = :fecha_inicio, fecha_salida = :fecha_salida, total_reserva = :total_reserva, id_habitacion = :id_habitacion, id_cliente = :id_cliente, estado_reserva = :estado_reserva WHERE numero_reserva = :numero_reserva", $datos);
     }
 }
 

@@ -48,27 +48,27 @@
                             <form>
                                 <div class="form-group">
                                     <label for="total-reserva" class="col-form-label">Total Reserva:</label>
-                                    <input type="text" class="form-control" id="total-reserva">
+                                    <input type="text" class="form-control" id="total_reserva">
                                 </div>
                                 <div class="form-group">
                                     <label for="fecha-llegada" class="col-form-label">Fecha Llegada:</label>
-                                    <input type="text" class="form-control" id="fecha-llegada">
+                                    <input type="text" class="form-control" id="fecha_inicio">
                                 </div>
                                 <div class="form-group">
                                     <label for="fecha-salida" class="col-form-label">Fecha Salida:</label>
-                                    <input type="text" class="form-control" id="fecha-salida">
+                                    <input type="text" class="form-control" id="fecha_salida">
                                 </div>
                                 <div class="form-group">
                                     <label for="estado-reserva" class="col-form-label">Estado Reserva:</label>
-                                    <input type="text" class="form-control" id="estado-reserva">
+                                    <input type="text" class="form-control" id="estado_reserva">
                                 </div>
                                 <div class="form-group">
                                     <label for="habitacion" class="col-form-label">Habitación:</label>
-                                    <input type="text" class="form-control" id="habitacion">
+                                    <input type="text" class="form-control" id="id_habitacion">
                                 </div>
                                 <div class="form-group">
                                     <label for="cliente-id" class="col-form-label">Cliente ID:</label>
-                                    <input type="text" class="form-control" id="cliente-id">
+                                    <input type="text" class="form-control" id="id_usuario">
                                 </div>
                             </form>
                         </div>
@@ -86,6 +86,7 @@
 
 
     <?php include_once 'views/template/footer-admin.php'; ?>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalReservas.js'; ?>"></script>
     </body>
 
     </html>
