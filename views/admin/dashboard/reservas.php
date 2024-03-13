@@ -74,7 +74,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#editModal" data-numero-reserva="<?php echo $reserva['numero_reserva']; ?>">Editar</a>
                         </div>
                     </div>
                 </div>
@@ -87,6 +87,7 @@
 
     <?php include_once 'views/template/footer-admin.php'; ?>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalReservas.js'; ?>"></script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarReserva.js'; ?>"></script>
     </body>
 
     </html>

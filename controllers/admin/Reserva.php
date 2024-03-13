@@ -20,6 +20,23 @@ class Reserva extends Controller{
             echo json_encode($reserva);
         }
     }
+    public function actualizarReserva(){
+        if(isset($_POST['numero_reserva'])){
+            $datos = [
+                'numero_reserva' => $_POST['numero_reserva'],
+                'fecha_inicio' => $_POST['fecha_inicio'],
+                'fecha_salida' => $_POST['fecha_salida'],
+                'total_reserva' => $_POST['total_reserva'],
+                'id_habitacion' => $_POST['id_habitacion'],
+                'id_usuario' => $_POST['id_usuario'],
+                'estado_reserva' => $_POST['estado_reserva']
+            ];
+            $reserva = $this->model->actualizarReserva($datos);
+            if($reserva){
+                header('location:'.RUTA_ADMIN.'reserva/listar');
+            }
+        }
+    }
     
 }
 

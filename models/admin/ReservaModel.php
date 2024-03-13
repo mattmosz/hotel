@@ -19,7 +19,7 @@ class ReservaModel extends Query
     }
     public function actualizarReserva($datos)
     {
-        return $this->guardar("UPDATE reservas SET fecha_inicio = :fecha_inicio, fecha_salida = :fecha_salida, total_reserva = :total_reserva, id_habitacion = :id_habitacion, id_cliente = :id_cliente, estado_reserva = :estado_reserva WHERE numero_reserva = :numero_reserva", $datos);
+        return $this->guardar("UPDATE reservas SET fecha_inicio = :fecha_inicio, fecha_salida = :fecha_salida, total_reserva = :total_reserva, id_habitacion = :id_habitacion, id_usuario = :id_usuario, estado_reserva = :estado_reserva WHERE numero_reserva = :numero_reserva", $datos);
     }
 }
 
