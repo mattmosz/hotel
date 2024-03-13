@@ -25,4 +25,8 @@ class ClienteModel extends Query
     {
         return $this->guardar("DELETE FROM usuarios WHERE id_usuario = :id_usuario", ['id_usuario' => $id_usuario]);
     }
+    public function insertarCliente($datos)
+    {
+        return $this->guardar("INSERT INTO usuarios (nombre_usuario, apellido_usuario, usuario, correo_usuario, clave_usuario, estado_usuario, rol_usuario) VALUES (:nombre_usuario, :apellido_usuario, :usuario, :correo_usuario, :clave_usuario, :estado_usuario, 2)", $datos);
+    }
 }

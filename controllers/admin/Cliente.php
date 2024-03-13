@@ -51,5 +51,23 @@ class Cliente extends Controller{
                 echo json_encode(['success' => false]);
             }
     }
+
+    public function insertarCliente(){
+    if(isset($_POST['nombre_usuario'])){
+        $datos = [
+            'nombre_usuario' => $_POST['nombre_usuario'],
+            'apellido_usuario' => $_POST['apellido_usuario'],
+            'usuario' => $_POST['usuario'],
+            'correo_usuario' => $_POST['correo_usuario'],
+            'clave_usuario' => password_hash($_POST['clave_usuario'], PASSWORD_DEFAULT),
+            'estado_usuario' => $_POST['estado_usuario']
+        ];
+        $cliente = $this->model->insertarCliente($datos);
+        if($cliente){
+            header('location:'.RUTA_ADMIN.'cliente/listar');
+        }
+    }
+}
+
     
 }
