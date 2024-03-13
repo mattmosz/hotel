@@ -39,4 +39,13 @@ class Habitacion extends Controller{
         }
     }
 
+    public function eliminarHabitacion($id_habitacion){
+        $habitacion = $this->model->eliminarHabitacion($id_habitacion);
+        if($habitacion){
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false]);
+            }
+    }
+
 }

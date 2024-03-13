@@ -80,6 +80,7 @@
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalHabitaciones.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarHabitacion.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarHabitacion.js'; ?>"></script>
 </body>
 
 </html>

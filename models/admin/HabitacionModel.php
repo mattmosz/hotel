@@ -22,5 +22,9 @@ class HabitacionModel extends Query
     {
         return $this->guardar("UPDATE habitaciones SET numero_habitacion = :numero_habitacion, estilo_habitacion = :estilo_habitacion, descripcion_habitacion = :descripcion_habitacion, precio_noche = :precio_noche, estado_habitacion = :estado_habitacion WHERE id_habitacion = :id_habitacion", $datos);
     }
+    public function eliminarHabitacion($id_habitacion)
+    {
+        return $this->guardar("DELETE FROM habitaciones WHERE id_habitacion = :id_habitacion", ['id_habitacion' => $id_habitacion]);
+    }
 
 }
