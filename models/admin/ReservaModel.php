@@ -21,6 +21,10 @@ class ReservaModel extends Query
     {
         return $this->guardar("UPDATE reservas SET fecha_inicio = :fecha_inicio, fecha_salida = :fecha_salida, total_reserva = :total_reserva, id_habitacion = :id_habitacion, id_usuario = :id_usuario, estado_reserva = :estado_reserva WHERE numero_reserva = :numero_reserva", $datos);
     }
+    public function eliminarReserva($numero_reserva)
+    {
+        return $this->guardar("DELETE FROM reservas WHERE numero_reserva = :numero_reserva", ['numero_reserva' => $numero_reserva]);
+    }
 }
 
 ?>
