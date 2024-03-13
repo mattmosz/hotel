@@ -100,9 +100,11 @@
     </div>
     <!--end switcher-->
     <!-- Bootstrap JS -->
-    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/bootstrap.bundle.min.js"></script>
-    <!--plugins-->
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/jquery.min.js"></script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--plugins-->
+    
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/simplebar/js/simplebar.min.js"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/metismenu/js/metisMenu.min.js"></script>
     <!-- <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/plugins/chartjs/js/Chart.min.js"></script>

@@ -49,13 +49,15 @@
                         <div class="menu-title">Panel de Control</div>
                     </a>
                     <ul>
+                    <li> <a href="<?php echo RUTA_ADMIN . 'dashboard/index' ?>"><i class="bx bx-right-arrow-alt"></i>Inicio</a>
+                        </li>
                         <li> <a href="<?php echo RUTA_ADMIN . 'reserva/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Reservas</a>
                         </li>
                         <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
                         </li>
                     </ul>
                 </li>
-                
+
             </ul>
             <!--end navigation-->
         </div>
@@ -89,3 +91,6 @@
                 </nav>
             </div>
         </header>
+        <!--start page wrapper -->
+        <div class="page-wrapper">
+            <div class="page-content">
