@@ -37,6 +37,13 @@ class Reserva extends Controller{
             }
         }
     }
+
+    public function eliminarReserva($numero_reserva){
+        $reserva = $this->model->eliminarReserva($numero_reserva);
+        if($reserva){
+            header('location:'.RUTA_ADMIN.'reserva/listar');
+        }
+    }
     
 }
 
