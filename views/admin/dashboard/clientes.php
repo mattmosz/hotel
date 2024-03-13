@@ -76,6 +76,7 @@
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalClientes.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarCliente.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarCliente.js'; ?>"></script>
 </body>
 
 </html>

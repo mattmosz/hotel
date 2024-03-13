@@ -42,5 +42,14 @@ class Cliente extends Controller{
             }
         }
     }
+
+    public function eliminarCliente($id_usuario){
+        $cliente = $this->model->eliminarCliente($id_usuario);
+        if($cliente){
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false]);
+            }
+    }
     
 }
