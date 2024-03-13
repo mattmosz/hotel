@@ -53,7 +53,7 @@
                         </li>
                         <li> <a href="<?php echo RUTA_ADMIN . 'reserva/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Reservas</a>
                         </li>
-                        <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
+                        <li> <a href="<?php echo RUTA_ADMIN . 'cliente/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Clientes</a>
                         </li>
                     </ul>
                 </li>
