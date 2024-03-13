@@ -29,7 +29,7 @@
                             <td><?php echo $reserva['estilo_habitacion']; ?></td>
                             <td>
                                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#editModal">Editar</a>
-                                <a href="<?php echo RUTA_ADMIN . 'reserva/eliminar/' . $reserva['numero_reserva']; ?>" class="btn btn-danger">Eliminar</a>
+                                <button class="btn btn-danger" data-numero-reserva="<?php echo $reserva['numero_reserva']; ?>">Eliminar</button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -88,6 +88,7 @@
     <?php include_once 'views/template/footer-admin.php'; ?>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalReservas.js'; ?>"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarReserva.js'; ?>"></script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarReserva.js'; ?>"></script>
     </body>
 
     </html>

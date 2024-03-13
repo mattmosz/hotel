@@ -23,9 +23,13 @@ $(document).ready(function() {
             method: 'POST',
             data: datos,
             success: function(response) {
+                sweetalert('Reserva actualizada', 'success');
             $('#editModal').modal('hide');
             location.reload();
-            } 
+            },
+            error: function() {
+                sweetalert('Error al actualizar la reserva', 'warning');
+            }
         });
     });
 });

@@ -116,6 +116,16 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
     const base_url = '<?php echo RUTA_ADMIN; ?>';
+    function sweetalert(mensaje, tipo) {
+        Swal.fire({
+            position: "top-end",
+            icon: tipo,
+            title: mensaje,
+            showConfirmButton: false,
+            timer: 2500,
+            toast: true
+        });
+    }
     </script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin'; ?>/js/custom.js" ></script>
 </body>
