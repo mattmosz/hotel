@@ -95,14 +95,14 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="explore-img">
-                    <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/explore-img.png" alt="Image">
+                    <img src="<?php echo RUTA_PRINCIPAL . 'assets'; ?>/img/explore.jpg" alt="Image">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="explore-content ml-30">
                     <h2>As much as comfort want to get from us everything</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet reprehenderit ratione ad perspiciatis repudiandae iste ipsam temporibus sit quo! Incidunt, necessitatibus fugiat ut dignissimos pariatur odit natus ipsum! Obcaecati iste ipsam temporibus sit quo! Incidunt, necessitatibus Obcaecati iste ipsam temporibus Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>Konin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad minim veniam, quis nostrud exercitation. dolor sit amet, consectetur adipisicing quis nostrud exercitation Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Está situado en el centro de crecimiento de la ciudad de Azogues a 20 minutos de la ciudad de Cuenca y tan solo a 45 minutos del mayor complejo arqueológico del país, el Castillo de Ingapirca.</p>
+                    <p>Nuestras Instalaciones cuentan con habitaciones lujosamente equipadas y amobladas con tv cable Premium, piscina, baño turco e hidromasaje, discado directo, baño privado, restaurante, cafetería, Salas de Convenciones y Eventos sociales, servicio de transfer, roomservice, servicio de telefonía pública y privada, fax, internet, lavandería normal y en seco y seguridad privada</p>
                 </div>
             </div>
         </div>
@@ -181,77 +181,34 @@
 <section class="our-rooms-area pt-60 pb-100">
     <div class="container">
         <div class="section-title">
-            <span>Our Rooms</span>
-            <h2>Fascinating rooms & suites</h2>
+            <span>Nuestras Habitaciones</span>
+            <h2>Fina expresión de calidad y confort</h2>
         </div>
         <div class="tab industries-list-tab">
             <div class="row">
                 <div class="col-lg-4">
                     <ul class="tabs">
+                    <?php foreach($data['habitaciones'] as $habitacion){ ?>
                         <li class="single-rooms">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-1.jpg" alt="Image">
+                            <img src="<?php echo RUTA_PRINCIPAL . 'assets'; ?>/img/habitaciones/<?php echo $habitacion['foto_habitacion']; ?>" alt="Image">
                             <div class="room-content">
-                                <h3>Double Room</h3>
-                                <span>From $75.9/night</span>
+                                <h3><?php echo $habitacion['estilo_habitacion'] ?></h3>
+                                <span>Desde <?php echo $habitacion['precio_noche'] ?>/noche</span>
                             </div>
                         </li>
-                        <li class="single-rooms">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-2.jpg" alt="Image">
-                            <div class="room-content">
-                                <h3>Luxury Room</h3>
-                                <span>From $50.9/night</span>
-                            </div>
-                        </li>
-                        <li class="single-rooms">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-3.jpg" alt="Image">
-                            <div class="room-content">
-                                <h3>Best Room</h3>
-                                <span>From $70.9/night</span>
-                            </div>
-                        </li>
-                        <li class="single-rooms">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-4.jpg" alt="Image">
-                            <div class="room-content">
-                                <h3>Classic Room</h3>
-                                <span>From $95.9/night</span>
-                            </div>
-                        </li>
-                        <li class="single-rooms">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-5.jpg" alt="Image">
-                            <div class="room-content">
-                                <h3>Budget Room</h3>
-                                <span>From $95.9/night</span>
-                            </div>
-                        </li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="col-lg-8">
                     <div class="tab_content">
+                    <?php foreach($data['habitaciones'] as $habitacion){ ?>
                         <div class="tabs_item">
                             <div class="our-rooms-single-img room-bg-1">
+                                <img src="<?php echo RUTA_PRINCIPAL . 'assets'; ?>/img/habitaciones/<?php echo $habitacion['foto_habitacion']; ?>" alt="Imagen de la habitación">
+                                <span class="preview-item">Vista de habitación <?php echo $habitacion['estilo_habitacion'] ?></span>
                             </div>
-                            <span class="preview-item">The Preview Of Double Room</span>
                         </div>
-                        <div class="tabs_item">
-                            <div class="our-rooms-single-img room-bg-2">
-                            </div>
-                            <span class="preview-item">The Preview Of Luxury Room</span>
-                        </div>
-                        <div class="tabs_item">
-                            <div class="our-rooms-single-img room-bg-3">
-                            </div>
-                            <span class="preview-item">The Preview Of Best Room</span>
-                        </div>
-                        <div class="tabs_item">
-                            <div class="our-rooms-single-img room-bg-4">
-                            </div>
-                            <span class="preview-item">The Preview Of Classic Room</span>
-                        </div>
-                        <div class="tabs_item">
-                            <div class="our-rooms-single-img room-bg-5">
-                            </div>
-                            <span class="preview-item">The Preview Of Budget Room</span>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
