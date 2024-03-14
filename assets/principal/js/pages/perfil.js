@@ -12,7 +12,6 @@ frm.addEventListener("submit", function(event) {
             sweetalert(respuesta.msg, respuesta.tipo);
             if (respuesta.tipo === 'success') {
                 sweetalert('Reserva realizada con éxito', 'success');
-                // Clear reservation data and display message
                 document.getElementById("reserva-form").reset();
                 document.getElementById("mensaje-reserva").textContent = "No tienes reservas pendientes";
             } else {
