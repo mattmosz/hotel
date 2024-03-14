@@ -102,12 +102,7 @@
                 <div class="explore-content ml-30">
                     <h2>As much as comfort want to get from us everything</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet reprehenderit ratione ad perspiciatis repudiandae iste ipsam temporibus sit quo! Incidunt, necessitatibus fugiat ut dignissimos pariatur odit natus ipsum! Obcaecati iste ipsam temporibus sit quo! Incidunt, necessitatibus Obcaecati iste ipsam temporibus Lorem ipsum dolor sit amet consectetur.</p>
-
                     <p>Konin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad minim veniam, quis nostrud exercitation. dolor sit amet, consectetur adipisicing quis nostrud exercitation Lorem ipsum dolor sit amet consectetur.</p>
-                    <a href="about.html" class="default-btn">
-                        explore More
-                        <i class="flaticon-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -129,9 +124,6 @@
                         <i class="facilities-icon flaticon-pickup"></i>
                         <h3>Pick Up & Drop​</h3>
                         <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                        <a href="service-details.html" class="icon-btn">
-                            <i class="flaticon-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -141,9 +133,6 @@
                         <i class="facilities-icon flaticon-coffee-cup"></i>
                         <h3>Welcome Drink​​​​</h3>
                         <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                        <a href="service-details.html" class="icon-btn">
-                            <i class="flaticon-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -153,9 +142,6 @@
                         <i class="facilities-icon flaticon-garage"></i>
                         <h3>​​Parking Space</h3>
                         <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                        <a href="service-details.html" class="icon-btn">
-                            <i class="flaticon-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -165,9 +151,6 @@
                         <i class="facilities-icon flaticon-water"></i>
                         <h3>Cold Hot & Water​</h3>
                         <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                        <a href="service-details.html" class="icon-btn">
-                            <i class="flaticon-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -185,10 +168,6 @@
             </a>
             <h2><span>Incredible!</span> Are you coming today</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sed obcaecati, magni excepturi, temporibus vero, inventore tenetur assumenda natus sequi labore. Voluptates eligendi dolores quod temporibus aperiam adipisci, quasi reprehenderit. Voluptates eligendi dolores quod temporibus.</p>
-            <a href="#" class="default-btn">
-                Join Us Today
-                <i class="flaticon-right"></i>
-            </a>
         </div>
     </div>
     <div class="white-shape">
@@ -310,86 +289,7 @@
 </section>
 <!-- End City View Area -->
 
-<!-- Start Exclusive Area -->
-<section class="exclusive-area pt-100 pb-70">
-    <div class="container">
-        <div class="section-title">
-            <span>Exclusive Offers</span>
-            <h2>You can get an exclusive offer </h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="exclusive-wrap">
-                    <div class="row">
-                        <div class="col-lg-6 pr-0">
-                            <div class="exclusive-img bg-1"></div>
-                        </div>
-                        <div class="col-lg-6 pl-0">
-                            <div class="exclusive-content">
-                                <span class="title">Up To 30% Off</span>
-                                <h3>Swimming for man</h3>
-                                <span class="review">
-                                    4.5
-                                    <a href="#">(432 Reviews)</a>
-                                </span>
-                                <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
-                                <ul>
-                                    <li>
-                                        <i class="bx bx-time"></i>
-                                        Duration: 2Hours
-                                    </li>
-                                    <li>
-                                        <i class="bx bx-target-lock"></i>
-                                        18+ years
-                                    </li>
-                                </ul>
-                                <a href="book-table.html" class="default-btn">
-                                    Book Online
-                                    <i class="flaticon-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="exclusive-wrap">
-                    <div class="row">
-                        <div class="col-lg-6 pr-0">
-                            <div class="exclusive-img bg-2"></div>
-                        </div>
-                        <div class="col-lg-6 pl-0">
-                            <div class="exclusive-content">
-                                <span class="title">This Month Only</span>
-                                <h3>$5 Breakfast package</h3>
-                                <span class="review">
-                                    5.0
-                                    <a href="#">(580 Reviews)</a>
-                                </span>
-                                <p>Start $5 doller dolor sit aet odeu tur adiing elitse</p>
-                                <ul>
-                                    <li>
-                                        <i class="bx bx-time"></i>
-                                        Duration: 2Hours
-                                    </li>
-                                    <li>
-                                        <i class="bx bx-target-lock"></i>
-                                        18+ years
-                                    </li>
-                                </ul>
-                                <a href="book-table.html" class="default-btn">
-                                    Book Online
-                                    <i class="flaticon-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Exclusive Area -->
+
 
 <!-- Start Booking Area -->
 <section class="bokking-area pb-70">
@@ -614,96 +514,7 @@
 </section>
 <!-- End Restaurants Area -->
 
-<!-- start Testimonials Area -->
-<section class="testimonials-area pb-100">
-    <div class="container">
-        <div class="section-title">
-            <span>Testimonials</span>
-            <h2>What customers say</h2>
-        </div>
-        <div class="testimonials-wrap owl-carousel owl-theme">
-            <div class="single-testimonials">
-                <ul>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                </ul>
-                <h3>Excellent Room</h3>
-                <p>“Awesome yksum dolor sit ametco elit, sed do eiusmod tempor incididunt et md do eiusmoeiusmod tempor inte emamnsecacing eiusmoeiusmod”</p>
-                <div class="testimonials-content">
-                    <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/testimonials/2.jpg" alt="Image">
-                    <h4>Ayman Jenis</h4>
-                    <span>CEO@Leasuely</span>
-                </div>
-            </div>
-            <div class="single-testimonials">
-                <ul>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                </ul>
-                <h3>Excellent hotel</h3>
-                <p>“Awesome yksum dolor sit ametco elit, sed do eiusmod tempor incididunt et md do eiusmoeiusmod tempor inte emamnsecacing eiusmoeiusmod”</p>
-                <div class="testimonials-content">
-                    <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/testimonials/3.jpg" alt="Image">
-                    <h4>Ayman Jenis</h4>
-                    <span>CEO@Leasuely</span>
-                </div>
-            </div>
-            <div class="single-testimonials">
-                <ul>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                    <li>
-                        <i class="bx bxs-star"></i>
-                    </li>
-                </ul>
-                <h3>Excellent Swimming</h3>
-                <p>“Awesome yksum dolor sit ametco elit, sed do eiusmod tempor incididunt et md do eiusmoeiusmod tempor inte emamnsecacing eiusmoeiusmod”</p>
-                <div class="testimonials-content">
-                    <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/testimonials/1.jpg" alt="Image">
-                    <h4>Ayman Jenis</h4>
-                    <span>CEO@Leasuely</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Testimonials Area -->
+
 
 <!-- End News Area -->
 <section class="news-area pb-60">
