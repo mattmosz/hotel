@@ -24,9 +24,15 @@ class Servicio extends Controller{
         if(isset($_POST['id_servicio'])){
             $id_servicio = $_POST['id_servicio'];
             $servicio = $this->model->eliminarServicio($id_servicio);
-            echo json_encode($servicio);
+            if ($servicio) {
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false]);
+            }
         }
     }
+    
+    
     public function actualizarServicio(){
         if(isset($_POST['id_servicio'])){
             $datos = [
@@ -35,6 +41,18 @@ class Servicio extends Controller{
                 'descripcion_servicio' => $_POST['descripcion_servicio']
             ];
             $servicio = $this->model->actualizarServicio($datos);
+            if($servicio){
+                header('location:'.RUTA_ADMIN.'servicio/listar');
+            }
+        }
+    }
+    public function insertarServicio(){
+        if(isset($_POST['titulo_servicio'])){
+            $datos = [
+                'titulo_servicio' => $_POST['titulo_servicio'],
+                'descripcion_servicio' => $_POST['descripcion_servicio']
+            ];
+            $servicio = $this->model->insertarServicio($datos);
             if($servicio){
                 header('location:'.RUTA_ADMIN.'servicio/listar');
             }

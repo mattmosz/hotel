@@ -13,8 +13,9 @@ $('#tablaServicios').on('click', '.btn-danger', function(e) {
     }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({
-                url: base_url + 'servicio/eliminarServicio/' + idServicio,
+                url: base_url + 'servicio/eliminarServicio',
                 method: 'POST',
+                data: { id_servicio: idServicio },
                 success: function(response) {
                     var data = JSON.parse(response);
                     if (data.success) {
@@ -36,3 +37,4 @@ $('#tablaServicios').on('click', '.btn-danger', function(e) {
         }
     });
 });
+

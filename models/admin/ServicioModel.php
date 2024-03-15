@@ -24,4 +24,8 @@ class ServicioModel extends Query
     {
         return $this->guardar("DELETE FROM servicios WHERE id_servicio = :id_servicio", ['id_servicio' => $id_servicio]);
     }
+    public function insertarServicio($datos)
+    {
+        return $this->guardar("INSERT INTO servicios (titulo_servicio, descripcion_servicio) VALUES (:titulo_servicio, :descripcion_servicio)", $datos);
+    }
 }

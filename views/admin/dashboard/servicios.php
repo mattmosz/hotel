@@ -92,6 +92,7 @@
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalServicios.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarServicio.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarServicio.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/insertarServicio.js'; ?>"></script>
 </body>
 
 </html>
