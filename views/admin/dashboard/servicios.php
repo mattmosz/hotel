@@ -90,6 +90,7 @@
 
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalServicios.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarServicio.js'; ?>"></script>
 </body>
 
 </html>

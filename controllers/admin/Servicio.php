@@ -20,4 +20,12 @@ class Servicio extends Controller{
             echo json_encode($servicio);
         }
     }
+    public function eliminarServicio(){
+        if(isset($_POST['id_servicio'])){
+            $id_servicio = $_POST['id_servicio'];
+            $servicio = $this->model->eliminarServicio($id_servicio);
+            echo json_encode($servicio);
+        }
+    }
+ 
 }
