@@ -57,6 +57,8 @@
                         </li>
                         <li> <a href="<?php echo RUTA_ADMIN . 'habitacion/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Habitaciones</a>
                         </li>
+                        <li> <a href="<?php echo RUTA_ADMIN . 'servicio/listar' ?>"><i class="bx bx-right-arrow-alt"></i>Servicios</a>
+                        </li>
                     </ul>
                 </li>
 
