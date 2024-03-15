@@ -89,8 +89,8 @@
 <section class="explore-area pt-170 pb-100">
     <div class="container">
         <div class="section-title">
-            <span>Explore</span>
-            <h2>We are cool to give you pleasure</h2>
+            <span>Descubra</span>
+            <h2>Elegancia y conexión cultural</h2>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -100,8 +100,8 @@
             </div>
             <div class="col-lg-6">
                 <div class="explore-content ml-30">
-                    <h2>As much as comfort want to get from us everything</h2>
-                    <p>Está situado en el centro de crecimiento de la ciudad de Azogues a 20 minutos de la ciudad de Cuenca y tan solo a 45 minutos del mayor complejo arqueológico del país, el Castillo de Ingapirca.</p>
+                    <h2>Estancia ideal en Azogues, a un paso de la historia</h2>
+                    <p>El Hotel Paraíso está situado en el centro de crecimiento de la ciudad de Azogues a 20 minutos de la ciudad de Cuenca y tan solo a 45 minutos del mayor complejo arqueológico del país, el Castillo de Ingapirca.</p>
                     <p>Nuestras Instalaciones cuentan con habitaciones lujosamente equipadas y amobladas con tv cable Premium, piscina, baño turco e hidromasaje, discado directo, baño privado, restaurante, cafetería, Salas de Convenciones y Eventos sociales, servicio de transfer, roomservice, servicio de telefonía pública y privada, fax, internet, lavandería normal y en seco y seguridad privada</p>
                 </div>
             </div>
@@ -110,64 +110,15 @@
 </section>
 <!-- End Explore Area -->
 
-<!-- End Facilities Area -->
-<section class="facilities-area pb-60">
-    <div class="container">
-        <div class="section-title">
-            <span>Facilities</span>
-            <h2>Giving entirely awesome</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-facilities-wrap">
-                    <div class="single-facilities">
-                        <i class="facilities-icon flaticon-pickup"></i>
-                        <h3>Pick Up & Drop​</h3>
-                        <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-facilities-wrap">
-                    <div class="single-facilities">
-                        <i class="facilities-icon flaticon-coffee-cup"></i>
-                        <h3>Welcome Drink​​​​</h3>
-                        <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-facilities-wrap">
-                    <div class="single-facilities">
-                        <i class="facilities-icon flaticon-garage"></i>
-                        <h3>​​Parking Space</h3>
-                        <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-facilities-wrap">
-                    <div class="single-facilities">
-                        <i class="facilities-icon flaticon-water"></i>
-                        <h3>Cold Hot & Water​</h3>
-                        <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Facilities Area -->
-
 <!-- End Incredible Area -->
 <section class="incredible-area ptb-140 jarallax">
     <div class="container">
         <div class="incredible-content">
-            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn popup-youtube">
+            <a href="https://www.youtube.com/watch?v=Wr233LZ6ams" class="video-btn popup-youtube">
                 <i class="flaticon-play-button"></i>
             </a>
-            <h2><span>Incredible!</span> Are you coming today</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sed obcaecati, magni excepturi, temporibus vero, inventore tenetur assumenda natus sequi labore. Voluptates eligendi dolores quod temporibus aperiam adipisci, quasi reprehenderit. Voluptates eligendi dolores quod temporibus.</p>
+            <h2>Un recorrido visual por el hotel</h2>
+            <p>Bienvenidos a un viaje visual donde el lujo y la comodidad se encuentran. Les invitamos a descubrir cada rincón de nuestro hotel, desde las habitaciones elegantemente amuebladas hasta nuestras exclusivas instalaciones de ocio. Disfruten de la experiencia y vean por qué somos la elección perfecta para su estancia en Azogues.</p>
         </div>
     </div>
     <div class="white-shape">
@@ -216,210 +167,6 @@
     </div>
 </section>
 <!-- End Our Rooms Area -->
-
-<!-- Start City View Area -->
-<section class="city-view-area ptb-100">
-    <div class="container">
-        <div class="city-wrap">
-            <div class="single-city-item owl-carousel owl-theme">
-                <div class="city-view-single-item">
-                    <div class="city-content">
-                        <span>The City View</span>
-                        <h3>A charming view of the city town</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus. Id, explicabo saepe Consequuntur</p>
-
-                        <p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
-                    </div>
-                </div>
-                <div class="city-view-single-item">
-                    <div class="city-content">
-                        <span>The City View</span>
-                        <h3>The charming view of the city</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus. Id, explicabo saepe Consequuntur</p>
-
-                        <p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End City View Area -->
-
-
-
-<!-- Start Booking Area -->
-<section class="bokking-area pb-70">
-    <div class="container">
-        <div class="section-title">
-            <span>Booking</span>
-            <h2>Direct booking benefits</h2>
-        </div>
-
-        <div class="row">
-            <div class="booking-col-2">
-                <div class="single-booking">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <i class="book-icon flaticon-online-booking"></i>
-                        <span class="booking-title">Free cost</span>
-                        <h3>No booking fee</h3>
-                    </a>
-
-                    <div class="modal fade" id="staticBackdrop">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">No booking fee</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod alias. Natus voluptate.</p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="book-table.html" class="default-btn">
-                                        Book Now
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="booking-col-2">
-                <div class="single-booking">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
-                        <i class="book-icon flaticon-podium"></i>
-                        <span class="booking-title">Free cost</span>
-                        <h3>Best rate guarantee</h3>
-                    </a>
-
-                    <div class="modal fade" id="staticBackdrop-2">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Best rate guarantee</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod alias. Natus voluptate.</p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="book-table.html" class="default-btn">
-                                        Book Now
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="booking-col-2">
-                <div class="single-booking">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
-                        <i class="book-icon flaticon-airport"></i>
-                        <span class="booking-title">Free cost</span>
-                        <h3>Reservations 24/7</h3>
-                    </a>
-
-                    <div class="modal fade" id="staticBackdrop-3">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Reservations 24/7</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod alias. Natus voluptate.</p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="book-table.html" class="default-btn">
-                                        Book Now
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="booking-col-2">
-                <div class="single-booking">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop-4">
-                        <i class="book-icon flaticon-slow"></i>
-                        <span class="booking-title">Free cost</span>
-                        <h3>High-speed Wi-Fi</h3>
-                    </a>
-
-                    <div class="modal fade" id="staticBackdrop-4">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">High-speed Wi-Fi</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod alias. Natus voluptate.</p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="book-table.html" class="default-btn">
-                                        Book Now
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="booking-col-2">
-                <div class="single-booking">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop-5">
-                        <i class="book-icon flaticon-coffee-cup-1"></i>
-                        <span class="booking-title">Free cost</span>
-                        <h3>Free breakfast</h3>
-                    </a>
-
-                    <div class="modal fade" id="staticBackdrop-5">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Free breakfast</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod alias. Natus voluptate.</p>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="book-table.html" class="default-btn">
-                                        Book Now
-                                        <i class="flaticon-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Booking Area -->
 
 <!-- Start Restaurants Area -->
 <section class="restaurants-area pb-100">
@@ -470,129 +217,6 @@
     </div>
 </section>
 <!-- End Restaurants Area -->
-
-
-
-<!-- End News Area -->
-<section class="news-area pb-60">
-    <div class="container">
-        <div class="section-title">
-            <span>Our BLog</span>
-            <h2>News & articles updates </h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-news">
-                    <div class="news-img">
-                        <a href="news-details.html">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/news/1.jpg" alt="Image">
-                        </a>
-                        <div class="dates">
-                            <span>HOTEL</span>
-                        </div>
-                    </div>
-                    <div class="news-content-wrap">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-user"></i>
-                                    Admin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-conversation"></i>
-                                    Comment
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="news-details.html">
-                            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                        <a class="read-more" href="news-details.html">
-                            Read More
-                            <i class="flaticon-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-news">
-                    <div class="news-img">
-                        <a href="news-details.html">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/news/2.jpg" alt="Image">
-                        </a>
-                        <div class="dates">
-                            <span>PRICE</span>
-                        </div>
-                    </div>
-                    <div class="news-content-wrap">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-user"></i>
-                                    Admin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-conversation"></i>
-                                    Comment
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="news-details.html">
-                            <h3>A Perfect Day With Businessman At Ecorik Hotel</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                        <a class="read-more" href="news-details.html">
-                            Read More
-                            <i class="flaticon-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                <div class="single-news">
-                    <div class="news-img">
-                        <a href="news-details.html">
-                            <img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/news/1.jpg" alt="Image">
-                        </a>
-                        <div class="dates">
-                            <span>STORE</span>
-                        </div>
-                    </div>
-                    <div class="news-content-wrap">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-user"></i>
-                                    Admin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="flaticon-conversation"></i>
-                                    Comment
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="news-details.html">
-                            <h3>Celebrating Decade Years Of Hotel In 2019</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                        <a class="read-more" href="news-details.html">
-                            Read More
-                            <i class="flaticon-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End News Area -->
 
 <?php include_once 'views/template/footer-principal.php';  
 

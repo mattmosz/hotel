@@ -1,27 +1,7 @@
 <!-- Start Footer Area -->
 <footer class="footer-top-area pt-140 jarallax">
     <div class="container">
-        <div class="section-title">
-            <h2>Subscribe newsletter</h2>
-            <p>Newsletr dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreonsectetur adipiscinet dolore.</p>
-        </div>
         <div class="footer-tops-area pb-60">
-            <div class="row">
-                <!-- Start Subscribe Area -->
-                <div class="subscribe-wrap">
-                    <form class="newsletter-form" data-toggle="validator">
-                        <input type="email" class="input-tracking" placeholder="Your Email" name="EMAIL" required autocomplete="off">
-
-                        <button class="default-btn active" type="submit">
-                            Subscribe
-                            <i class="flaticon-right"></i>
-                        </button>
-
-                        <div id="validator-newsletter" class="form-result"></div>
-                    </form>
-                </div>
-                <!-- End Subscribe Area -->
-            </div>
         </div>
         <div class="footer-middle-area pt-60">
             <div class="row">

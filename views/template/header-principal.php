@@ -86,11 +86,6 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?php echo RUTA_PRINCIPAL . 'blog'; ?>" class="nav-link">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="<?php echo RUTA_PRINCIPAL . 'contacto'; ?>" class="nav-link">
                                         Contacto
                                     </a>
