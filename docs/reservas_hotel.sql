@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 12-03-2024 a las 03:21:04
+-- Tiempo de generación: 15-03-2024 a las 23:47:15
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -42,23 +42,12 @@ CREATE TABLE `empresa` (
   `whatsapp` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Estructura de tabla para la tabla `entradas`
+-- Volcado de datos para la tabla `empresa`
 --
 
-CREATE TABLE `entradas` (
-  `id_entrada` int(11) NOT NULL,
-  `titutlo_entrada` varchar(255) NOT NULL,
-  `slug_entrada` varchar(255) NOT NULL,
-  `descripcion_entrada` longtext NOT NULL,
-  `foto_entrada` varchar(100) NOT NULL,
-  `fecha_entrada` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `categorias_entrada` varchar(255) NOT NULL,
-  `estado_entrada` int(11) NOT NULL DEFAULT 1,
-  `id_usuario` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `empresa` (`id_empresa`, `ruc_empresa`, `nombre_empresa`, `telefono_empresa`, `direccion_empresa`, `correo_empresa`, `mensaje_empresa`, `link_facebook`, `link_instagram`, `whatsapp`) VALUES
+(1, '0390037007001', 'Hotel Paraíso S.A.', '593-7-224-4927', 'Av. Alberto Ochoa sn y Miguel Vinitmilla, Azogues, Cañar , Ecuador', 'hparaiso@hotelparaiso.com.ec', 'Si usted tiene alguna pregunta, por favor, póngase en contacto con nosotros por e-mail o por teléfono y nos pondremos en contacto con usted tan pronto como sea posible. Esperamos con interés saber de usted.', NULL, NULL, '+593984887380');
 
 -- --------------------------------------------------------
 
@@ -85,7 +74,11 @@ CREATE TABLE `habitaciones` (
 --
 
 INSERT INTO `habitaciones` (`id_habitacion`, `estilo_habitacion`, `numero_habitacion`, `capacidad_habitacion`, `slug_habitacion`, `foto_habitacion`, `video_habitacion`, `descripcion_habitacion`, `precio_noche`, `estado_habitacion`, `fecha_habitacion`) VALUES
-(1, 'Doble', 10, 2, 'doble', '1.jpg', NULL, 'Ubicada en la Torre I', '44.00', 1, '2024-02-23 17:45:19');
+(1, 'Doble', 10, 2, 'doble', '1.jpg', NULL, 'Ubicada en la Torre I', '44.00', 1, '2024-03-13 20:53:48'),
+(5, 'Matrimonial', 12, 2, 'matrimonial', '2.webp', NULL, 'Ubicada en la Torre I', '44.00', 1, '2024-03-14 19:27:31'),
+(6, 'Triple', 14, 3, 'triple', '3.webp', NULL, 'Ubicada en la Torre I', '56.00', 1, '2024-03-14 18:39:30'),
+(7, 'Suite Junior', 16, 2, 'junior', '4.webp', NULL, 'Ubicada en la Torre I', '60.00', 1, '2024-03-14 21:36:25'),
+(8, 'Matrimonial Torre II', 20, 2, 'matrimonial-torre-ii', '5.webp', NULL, 'Ubicada en la Torre II', '64.00', 1, '2024-03-14 18:53:59');
 
 -- --------------------------------------------------------
 
@@ -110,8 +103,29 @@ CREATE TABLE `reservas` (
 --
 
 INSERT INTO `reservas` (`id_reserva`, `total_reserva`, `numero_reserva`, `fecha_inicio`, `fecha_salida`, `fecha_reserva`, `estado_reserva`, `id_habitacion`, `id_usuario`) VALUES
-(1, '300.00', '234234', '2024-02-24', '2024-02-26', '2024-02-23 22:13:28', 1, 1, 1),
-(6, '308.00', 'AKVBPNRFZ1', '2024-03-14', '2024-03-21', '2024-03-12 01:55:13', 1, 1, 1);
+(17, '176.00', '70Z9D6CZVV', '2024-03-14', '2024-03-18', '2024-03-13 22:14:14', 1, 1, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `servicios`
+--
+
+CREATE TABLE `servicios` (
+  `id_servicio` int(11) NOT NULL,
+  `titulo_servicio` text NOT NULL,
+  `descripcion_servicio` text NOT NULL,
+  `icono_servicio` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `servicios`
+--
+
+INSERT INTO `servicios` (`id_servicio`, `titulo_servicio`, `descripcion_servicio`, `icono_servicio`) VALUES
+(1, 'Piscina', 'Nuestra piscina le invita a disfrutar de momentos de relajación y diversión bajo el sol de Azogues', 'restaurants-icon flaticon-swimming'),
+(2, 'Restaurante', 'Nuestro restaurante ofrece una experiencia culinaria única, con platos que deleitarán su paladar.', 'restaurants-icon flaticon-coffee-cup'),
+(3, 'Sala de eventos', 'El escenario perfecto para sus reuniones importantes, equipado con tecnología de vanguardia en un ambiente distinguido', 'restaurants-icon flaticon-speaker');
 
 -- --------------------------------------------------------
 
@@ -150,7 +164,6 @@ CREATE TABLE `usuarios` (
   `usuario` varchar(50) NOT NULL,
   `correo_usuario` varchar(150) NOT NULL,
   `clave_usuario` varchar(150) NOT NULL,
-  `token_usuario` varchar(100) DEFAULT NULL,
   `verify_usuario` int(11) NOT NULL DEFAULT 0,
   `rol_usuario` int(11) NOT NULL,
   `foto_usuario` varchar(100) DEFAULT NULL,
@@ -162,9 +175,10 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `usuario`, `correo_usuario`, `clave_usuario`, `token_usuario`, `verify_usuario`, `rol_usuario`, `foto_usuario`, `estado_usuario`, `fecha_usuario`) VALUES
-(1, 'nombre', 'apellido', 'usuario', 'correo@gmail.com', '$2y$10$Lo/soqurfOhJ/QCiBmC2XOkxwizOmtE6PyBtXcG2bZOp/zMi.J9PK', NULL, 0, 2, NULL, 1, '2024-03-08 03:43:22'),
-(2, 'Hola', 'Hola', 'hola', 'hola@gmail.com', '$2y$10$BdEaqXzLehdRzk2.hu3Sn.Dou/7SInqgjnR7FcpP4UqVuG.992kGu', NULL, 0, 2, NULL, 1, '2024-03-08 02:41:47');
+INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `usuario`, `correo_usuario`, `clave_usuario`, `verify_usuario`, `rol_usuario`, `foto_usuario`, `estado_usuario`, `fecha_usuario`) VALUES
+(1, 'Jorge', 'Yepez', 'jorge1', 'correo@gmail.com', '$2y$10$Lo/soqurfOhJ/QCiBmC2XOkxwizOmtE6PyBtXcG2bZOp/zMi.J9PK', 0, 2, NULL, 1, '2024-03-13 19:55:31'),
+(3, 'Matías', 'Mosquera', 'matias1', 'matias@gmail.com', '$2y$10$0s4Km2B3o7ktRfpRPg8zMOuVXw2JoCTnKhggHDNXV3ohVPs1lbXwy', 0, 1, NULL, 1, '2024-03-12 21:02:38'),
+(5, 'Mateo', 'Ortega', 'mateo1', 'hola@gmail.com', '$2y$10$TaEU4bBqdwND9S5V.4TzOOknhIL.2hFYyepsW5AXnVH7wGsjJhbNC', 0, 2, NULL, 1, '2024-03-13 22:12:05');
 
 --
 -- Índices para tablas volcadas
@@ -175,13 +189,6 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `apellido_usuario`, `usu
 --
 ALTER TABLE `empresa`
   ADD PRIMARY KEY (`id_empresa`);
-
---
--- Indices de la tabla `entradas`
---
-ALTER TABLE `entradas`
-  ADD PRIMARY KEY (`id_entrada`),
-  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `habitaciones`
@@ -196,6 +203,12 @@ ALTER TABLE `reservas`
   ADD PRIMARY KEY (`id_reserva`),
   ADD KEY `id_habitacion` (`id_habitacion`),
   ADD KEY `id_usuario` (`id_usuario`);
+
+--
+-- Indices de la tabla `servicios`
+--
+ALTER TABLE `servicios`
+  ADD PRIMARY KEY (`id_servicio`);
 
 --
 -- Indices de la tabla `sliders`
@@ -217,25 +230,25 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `entradas`
---
-ALTER TABLE `entradas`
-  MODIFY `id_entrada` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `habitaciones`
 --
 ALTER TABLE `habitaciones`
-  MODIFY `id_habitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_habitacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `reservas`
 --
 ALTER TABLE `reservas`
-  MODIFY `id_reserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_reserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT de la tabla `servicios`
+--
+ALTER TABLE `servicios`
+  MODIFY `id_servicio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `sliders`
@@ -247,17 +260,11 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `entradas`
---
-ALTER TABLE `entradas`
-  ADD CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `reservas`
