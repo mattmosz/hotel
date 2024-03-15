@@ -8,8 +8,8 @@ include_once 'views/template/portada.php'; ?>
 <section class="facilities-area-four">
     <div class="container">
         <div class="section-title">
-            <span>facilities</span>
-            <h2>Giving entirely awesome</h2>
+            <span>Servicios</span>
+            <h2>Servicios premium para nuestros huéspedes</h2>
         </div>
         <div class="row">
             <?php foreach($data['servicios'] as $servicio): ?>
