@@ -13,6 +13,12 @@ class PrincipalModel extends Query{
     public function getHabitaciones(){
         return $this->todos("SELECT * FROM habitaciones WHERE estado_habitacion = 1");
     }
+
+    //OBTENER SERVICIOS
+    public function getServicios(){
+        return $this->todos("SELECT * FROM servicios");
+    }
+
 }
 
 ?>

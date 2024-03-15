@@ -10,6 +10,8 @@ class Principal extends Controller{
         $data['sliders'] = $this->model->getSliders();
         //OBTENER HABITACIONES
         $data['habitaciones'] = $this->model->getHabitaciones();
+        //OBTENER SERVICIOS
+        $data['servicios'] = $this->model->getServicios();
         $this->views->getView('index', $data);
         
     }
