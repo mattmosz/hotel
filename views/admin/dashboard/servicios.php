@@ -40,11 +40,11 @@
                             <form>
                                 <div class="form-group">
                                     <label for="titulo" class="col-form-label">Titulo:</label>
-                                    <input type="text" class="form-control" id="titulo_servicio">
+                                    <input type="text" class="form-control" id="titulo_servicio" autocomplete="off">
                                 </div>
                                 <div class="form-group">
                                     <label for="descripcion" class="col-form-label">Descripcion:</label>
-                                    <input type="text" class="form-control" id="descripcion_servicio">
+                                    <input type="text" class="form-control" id="descripcion_servicio" autocomplete="off">
                                 </div>
                             </form>
                             <div class="modal-footer">
@@ -90,6 +90,7 @@
 
 <?php include_once 'views/template/footer-admin.php'; ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalServicios.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarServicio.js'; ?>"></script>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarServicio.js'; ?>"></script>
 </body>
 

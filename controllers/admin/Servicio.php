@@ -27,5 +27,18 @@ class Servicio extends Controller{
             echo json_encode($servicio);
         }
     }
+    public function actualizarServicio(){
+        if(isset($_POST['id_servicio'])){
+            $datos = [
+                'id_servicio' => $_POST['id_servicio'],
+                'titulo_servicio' => $_POST['titulo_servicio'],
+                'descripcion_servicio' => $_POST['descripcion_servicio']
+            ];
+            $servicio = $this->model->actualizarServicio($datos);
+            if($servicio){
+                header('location:'.RUTA_ADMIN.'servicio/listar');
+            }
+        }
+    }
  
 }
