@@ -10,7 +10,7 @@ class Servicio extends Controller{
         //OBTENER SERVICIOS
         $data['servicios'] = $this->model->listarServicios();
         $this->views->getView('principal/servicios/index', $data);
-        
+        $this->views->getView('template/footer-principal', $data);
     }
 }
 

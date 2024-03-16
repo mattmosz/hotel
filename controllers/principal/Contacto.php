@@ -10,7 +10,6 @@ class Contacto extends Controller{
         //OBTENER CONTACTOS
         $data['contactos'] = $this->model->listarContactos();
         $this->views->getView('principal/contacto/index', $data);
-        
     }
 }
 
