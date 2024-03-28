@@ -10,7 +10,7 @@
                         <a href="<?php echo RUTA_PRINCIPAL; ?>">
                             <img src="<?php echo RUTA_PRINCIPAL . 'assets'; ?>/img/logo.jpg" width="100" alt="Image">
                         </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestiae corporis, magni maxime perferendis ducimus.</p>
+                        <p>Cuenta con un total de 50 habitaciones incluyendo 9 suites, cafetería, restaurante-bar, Salones 3, room service, salas de conferencias y banquetes, Business Center, Piscina, Parqueaderos.</p>
                         <ul class="social-icon">
                             <li>
                                 <a href="https://www.facebook.com/hotelparaiso" target="_blank">
