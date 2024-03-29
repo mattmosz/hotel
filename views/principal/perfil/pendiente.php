@@ -21,7 +21,7 @@ include_once 'views/template/portada.php'; ?>
 
     <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'perfil' ?>">Perfil</a>
     <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'reserva/pendiente' ?>">Reservas</a>
-    <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'logout'?>">Cerrar Sesión</a>
+    <a class="nav-link" href="<?php echo RUTA_PRINCIPAL . 'logout' ?>">Cerrar Sesión</a>
 </nav>
 
 <div class="card">
@@ -41,6 +41,10 @@ include_once 'views/template/portada.php'; ?>
                     <!-- Hover added -->
                     <form id="reserva-form">
                         <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                                <strong>Cliente:</strong>
+                                <?php echo $_SESSION['nombre_usuario']; ?>
+                            </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 <strong>Habitación:</strong>
                                 <?php echo $data['habitacion']['estilo_habitacion'] ?>
@@ -70,27 +74,28 @@ include_once 'views/template/portada.php'; ?>
                                 <?php echo $data['habitacion']['descripcion_habitacion'] ?>
                             </a>
                         </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <strong>Total:</strong>
-                                    <?php
-                                    $fechaLlegada = $_SESSION['reserva']['fecha_llegada'];
-                                    $fechaSalida = $_SESSION['reserva']['fecha_salida'];
-                                    $precioNoche = $data['habitacion']['precio_noche'];
+                </div>
+                <div class="col-md-6">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <strong>Total:</strong>
+                            <?php
+                            $fechaLlegada = $_SESSION['reserva']['fecha_llegada'];
+                            $fechaSalida = $_SESSION['reserva']['fecha_salida'];
+                            $precioNoche = $data['habitacion']['precio_noche'];
 
-                                    $diferenciaFechas = strtotime($fechaSalida) - strtotime($fechaLlegada);
-                                    $noches = floor($diferenciaFechas / (60 * 60 * 24));
+                            $diferenciaFechas = strtotime($fechaSalida) - strtotime($fechaLlegada);
+                            $noches = floor($diferenciaFechas / (60 * 60 * 24));
 
-                                    $total = $precioNoche * $noches;
-                                    echo number_format($total, 2);
-                                    ?>
-                                </a>
-                            </div>
-                            <button class="btn btn-primary mt-3" id="confirmar-reserva" type="submit" name="confirmar-reserva">Confirmar Reserva</button>
-                        </div>
-                    </form>
+                            $total = $precioNoche * $noches;
+                            echo number_format($total, 2);
+                            ?>
+                        </a>
+                    </div>
+                    <button class="btn btn-primary mt-3" id="confirmar-reserva" type="submit" name="confirmar-reserva">Confirmar Reserva</button>
+                    <button class="btn btn-secondary mt-3" id="imprimir-nota" type="button">Imprimir Nota de Venta</button>
+                </div>
+                </form>
             </div>
 
         <?php } else { ?>
@@ -105,6 +110,7 @@ include_once 'views/template/portada.php'; ?>
 
 <?php include_once 'views/template/footer-principal.php';  ?>
 <script src="<?php echo RUTA_PRINCIPAL . 'assets/principal/js/pages/perfil.js'; ?>"></script>
+<script src="<?php echo RUTA_PRINCIPAL . 'assets/principal/js/pages/notaVenta.js'; ?>"></script>
 
 </body>
 
