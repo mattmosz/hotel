@@ -30,6 +30,7 @@
                             <td>
                                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#editModal">Editar</a>
                                 <button class="btn btn-danger" data-numero-reserva="<?php echo $reserva['numero_reserva']; ?>">Eliminar</button>
+                                <button class="btn btn-success" > Nota de Venta</button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -89,6 +90,7 @@
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/modalReservas.js'; ?>"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/guardarReserva.js'; ?>"></script>
     <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/eliminarReserva.js'; ?>"></script>
+    <script src="<?php echo RUTA_PRINCIPAL . 'assets/admin/js/pages/notaVenta.js'; ?>"></script>
     </body>
 
     </html>
