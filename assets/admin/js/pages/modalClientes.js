@@ -12,7 +12,8 @@ $(document).ready(function() {
                 $('#apellido_usuario').val(cliente.apellido_usuario);
                 $('#usuario').val(cliente.usuario);
                 $('#correo_usuario').val(cliente.correo_usuario);
-                $('#estado_usuario').val(cliente.estado_usuario);
+                $('#direccion_usuario').val(cliente.direccion_usuario);
+                $('#telefono_usuario').val(cliente.telefono_usuario);
             }
         });
     });

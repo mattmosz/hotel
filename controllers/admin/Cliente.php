@@ -34,7 +34,8 @@ class Cliente extends Controller{
                 'apellido_usuario' => $_POST['apellido_usuario'],
                 'usuario' => $_POST['usuario'],
                 'correo_usuario' => $_POST['correo_usuario'],
-                'estado_usuario' => $_POST['estado_usuario']
+                'direccion_usuario' => $_POST['direccion_usuario'],
+                'telefono_usuario' => $_POST['telefono_usuario']
             ];
             $cliente = $this->model->actualizarCliente($datos);
             if($cliente){

@@ -15,12 +15,15 @@ class ClienteModel extends Query
 
     public function getCliente($id_usuario)
     {
-        return $this->uno("SELECT nombre_usuario, apellido_usuario, usuario, correo_usuario, estado_usuario FROM usuarios WHERE id_usuario = '$id_usuario'");
+        return $this->uno("SELECT nombre_usuario, apellido_usuario, usuario, correo_usuario, direccion_usuario, telefono_usuario FROM usuarios WHERE id_usuario = '$id_usuario'");
     }
+
     public function actualizarCliente($datos)
     {
-        return $this->guardar("UPDATE usuarios SET nombre_usuario = :nombre_usuario, apellido_usuario = :apellido_usuario, usuario = :usuario, correo_usuario = :correo_usuario, estado_usuario = :estado_usuario WHERE id_usuario = :id_usuario", $datos);
+        var_dump($datos);
+        return $this->guardar("UPDATE usuarios SET nombre_usuario = :nombre_usuario, apellido_usuario = :apellido_usuario, usuario = :usuario, correo_usuario = :correo_usuario, direccion_usuario = :direccion_usuario, telefono_usuario = :telefono_usuario WHERE id_usuario = :id_usuario", $datos);
     }
+
     public function eliminarCliente($id_usuario)
     {
         return $this->guardar("DELETE FROM usuarios WHERE id_usuario = :id_usuario", ['id_usuario' => $id_usuario]);

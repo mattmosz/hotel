@@ -12,6 +12,8 @@
                         <th>Apellido</th>
                         <th>Usuario</th>
                         <th>Correo</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -22,6 +24,8 @@
                             <td><?php echo $cliente['apellido_usuario']; ?></td>
                             <td><?php echo $cliente['usuario']; ?></td>
                             <td><?php echo $cliente['correo_usuario']; ?></td>
+                            <td><?php echo $cliente['direccion_usuario']; ?></td>
+                            <td><?php echo $cliente['telefono_usuario']; ?></td>
                             <td>
                                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalCliente" data-id-usuario="<?php echo $cliente['id_usuario']; ?>">Editar</a>
                                 <button class="btn btn-danger" data-id-cliente="<?php echo $cliente['id_usuario']; ?>">Eliminar</button>
@@ -58,8 +62,12 @@
                                     <input type="text" class="form-control" id="correo_usuario">
                                 </div>
                                 <div class="form-group">
-                                    <label for="estado_usuario" class="col-form-label">Estado Usuario:</label>
-                                    <input type="text" class="form-control" id="estado_usuario">
+                                    <label for="direccion_usuario" class="col-form-label">Dirección:</label>
+                                    <input type="text" class="form-control" id="direccion_usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono_usuario" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="telefono_usuario">
                                 </div>
                             </form>
                         </div>

@@ -14,7 +14,8 @@ $(document).ready(function() {
             apellido_usuario: $('#apellido_usuario').val(),
             usuario: $('#usuario').val(),
             correo_usuario: $('#correo_usuario').val(),
-            estado_usuario: $('#estado_usuario').val()
+            direccion_usuario: $('#direccion_usuario').val(),
+            telefono_usuario: $('#telefono_usuario').val()
         };
         
         $.ajax({
