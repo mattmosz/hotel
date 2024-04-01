@@ -38,7 +38,7 @@ class Registro extends Controller
 
                             if ($data > 0) {
                                 crearSession([
-                                    'id_usuario' => $data['id_usuario'],
+                                    'id_usuario' => $data,
                                     'usuario' => $usuario,
                                     'correo_usuario' => $correo,
                                     'nombre_usuario' => $nombre . ' ' . $apellido,
